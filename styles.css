@@ -233,7 +233,7 @@ header .menu a:hover {
 }
 
 /* ------------------ PIE DE PÁGINA ------------------ */
-footer {
+footer .redes-sociales {
   background-color: #333; /* Fondo oscuro para el pie de página */
   color: white; /* Texto blanco */
   padding: 40px 0; /* Espaciado arriba y abajo */
