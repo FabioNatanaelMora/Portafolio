@@ -21,7 +21,7 @@ body {
 
 /* ------------------ HEADER ------------------ */
 header {
-  background: url('img/cod.jpg') center center no-repeat; /* Fondo con imagen centrado */
+  background: url('../img/cod.jpg') center center no-repeat; /* Fondo con imagen centrado */
   background-size: cover; /* La imagen de fondo cubre todo el área */
   height: 60vh; /* La altura del header es el 60% de la altura de la ventana */
   position: relative; /* Se necesita para posicionar el texto en el header */
