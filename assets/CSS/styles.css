@@ -134,6 +134,7 @@ header .menu a:hover {
   font-weight: 300; /* Peso de fuente más liviano */
   color: #233068; /* Color del título (azul oscuro) */
   text-align: center; /* Centra el texto */
+  
 }
 
 .contenedor-trabajos {
@@ -306,19 +307,75 @@ footer .redes-sociales a.github {
 footer .redes-sociales a.github:hover {
   text-decoration: underline; /* Subraya el enlace al pasar el mouse */
 }
+.nav_links {
+  list-style-type: none;  /* Saca los puntos */
+  display: flex;          /* Muestra en fila */
+  gap: 20px;              /* Espacio entre ítems */
+  padding: 0;
+  margin: 0;
+}
+
+.nav_links li a {
+  text-decoration: none;
+  color: whitesmoke; 
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav_links li a:hover {
+  color: #007BFF; 
+}
+.tabla_tecnologias {
+  width: 60%;
+  border-collapse: collapse;
+  margin:0 auto;
+  font-family: sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.tabla_tecnologias th,
+.tabla_tecnologias td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+/* Filas pares */
+.tabla_tecnologias tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Filas impares */
+.tabla_tecnologias tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.tecnologias {
+  margin: 40px auto;   /* Margen arriba y abajo, centrado horizontal */
+  padding: 20px;       /* Espacio interno */
+  max-width: 800px;    /* Ancho máximo del contenedor */
+  background-color: #f9f9f9;  /* Fondo suave opcional */
+  border-radius: 10px; /* Bordes redondeados para estética */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.tecnologias h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 /*RESPONSIVIDAD*/
 
 /* Tablet horizontal */
 @media (max-width: 1080px) {
   .menu ul {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
 /* Tablet vertical */
 @media (max-width: 768px) {
   .servicios {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
@@ -328,16 +385,16 @@ footer .redes-sociales a.github:hover {
     font-size: 2rem;
   }
   .seccion h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
 /* Móvil 2 */
 @media (max-width: 375px) {
   form input, form textarea {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
   form button {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
 }
