@@ -69,6 +69,11 @@ header .menu a {
 header .menu a:hover {
   border-bottom: 2px solid #fff; /* Cuando pasamos el ratón por encima, el borde se hace visible */
 }
+.menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
 
 /* ------------------ ACERCA DE ------------------ */
 .main .acerca-de {
@@ -300,4 +305,39 @@ footer .redes-sociales a.github {
 
 footer .redes-sociales a.github:hover {
   text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+}
+/*RESPONSIVIDAD*/
+
+/* Tablet horizontal */
+@media (max-width: 1080px) {
+  .menu ul {
+    flex-direction: column;
+  }
+}
+
+/* Tablet vertical */
+@media (max-width: 768px) {
+  .servicios {
+    flex-direction: column;
+  }
+}
+
+/* Móvil 1 */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .seccion h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Móvil 2 */
+@media (max-width: 375px) {
+  form input, form textarea {
+    font-size: 0.9rem;
+  }
+  form button {
+    font-size: 0.9rem;
+  }
 }
